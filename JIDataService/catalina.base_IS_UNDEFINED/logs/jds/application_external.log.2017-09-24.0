@@ -1,0 +1,30 @@
+2017-09-24 15:27:20:149 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 8840 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-24 15:27:20:152 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-24 15:27:20:902 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-24 15:27:22:647 INFO  StandardService- Starting service Tomcat
+2017-09-24 15:27:22:649 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-24 15:27:22:914 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-24 15:27:23:311 INFO  StandardService- Stopping service Tomcat
+2017-09-24 15:28:10:573 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 9712 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-24 15:28:10:576 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-24 15:28:11:216 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-24 15:28:13:186 INFO  StandardService- Starting service Tomcat
+2017-09-24 15:28:13:188 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-24 15:28:13:328 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-24 15:28:14:963 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-24 15:28:14:982 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-24 15:28:15:001 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-24 15:28:15:035 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 4.805 seconds (JVM running for 5.405)
+2017-09-24 15:28:29:076 INFO  [/jds]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-24 15:28:29:160 INFO  ExternalController- request(9541ba354e0e4e33b054e0647cead3b3):service=appGetArticleSummary, params=null
+2017-09-24 15:28:29:361 INFO  ExternalController- response(9541ba354e0e4e33b054e0647cead3b3):{"code":-904,"data":null,"msg":"service不存在"}
+2017-09-24 16:40:52:346 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 8008 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-24 16:40:52:350 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-24 16:40:52:932 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-24 16:40:54:885 INFO  StandardService- Starting service Tomcat
+2017-09-24 16:40:54:887 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-24 16:40:55:029 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-24 16:40:56:873 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-24 16:40:56:891 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-24 16:40:56:912 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-24 16:40:56:943 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 4.934 seconds (JVM running for 5.519)

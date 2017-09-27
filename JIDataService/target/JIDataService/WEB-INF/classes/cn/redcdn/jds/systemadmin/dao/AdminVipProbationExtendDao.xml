@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.redcdn.jds.systemadmin.dao.AdminVipProbationExtendDao">    
+
+    <!-- 删除数据库中信息 -->
+    <delete id="delete">
+        DELETE FROM
+            vip_probation        
+    </delete>
+
+</mapper>

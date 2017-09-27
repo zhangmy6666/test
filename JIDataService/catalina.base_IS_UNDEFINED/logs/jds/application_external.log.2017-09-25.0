@@ -1,0 +1,155 @@
+2017-09-25 16:39:55:089 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 744 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 16:39:55:093 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 16:39:56:264 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 16:39:59:120 INFO  StandardService- Starting service Tomcat
+2017-09-25 16:39:59:123 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 16:39:59:477 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 16:40:02:299 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-25 16:40:02:340 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-25 16:40:02:433 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-25 16:40:02:462 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 8.039 seconds (JVM running for 9.064)
+2017-09-25 16:50:49:048 INFO  [/jds]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-25 16:50:49:150 INFO  ExternalController- request(e0e3ea6a0a9a4f7888ae5b483a03fadd):service=adminSetVIPProbation, params={}
+2017-09-25 16:50:49:479 INFO  ExternalController- response(e0e3ea6a0a9a4f7888ae5b483a03fadd):{"code":-903,"data":null,"msg":"参数不能为空:token"}
+2017-09-25 16:52:00:583 INFO  ExternalController- request(aa8f941ae380450fa6a5cc485d3e4c4d):service=adminLogin, params=%7B%7D=
+2017-09-25 16:52:00:584 INFO  ExternalController- response(aa8f941ae380450fa6a5cc485d3e4c4d):{"code":-902,"data":null,"msg":"传入的json数据不正确"}
+2017-09-25 16:53:00:471 INFO  ExternalController- request(b30c5563d6d64fb4bd73fc213ed996ea):service=adminLogin, params=%7B%22account%22%3A%22test6%22%2C%22password%22%3A%22123456%22%7D=
+2017-09-25 16:53:00:471 INFO  ExternalController- response(b30c5563d6d64fb4bd73fc213ed996ea):{"code":-902,"data":null,"msg":"传入的json数据不正确"}
+2017-09-25 16:54:36:406 INFO  ExternalController- request(736eeb13dbad4235a5f6bc400809f072):service=adminSetVIPProbation, params={"token":"123123"}
+2017-09-25 16:54:36:559 INFO  ExternalController- response(736eeb13dbad4235a5f6bc400809f072):{"code":-907,"data":null,"msg":"授权令牌（token）无效"}
+2017-09-25 16:55:02:008 INFO  ExternalController- request(105624741eeb45f5969077d7d4bf31ce):service=adminLogin, params=%7B%22account%22%3A%22123123%22%7D=
+2017-09-25 16:55:02:009 INFO  ExternalController- response(105624741eeb45f5969077d7d4bf31ce):{"code":-902,"data":null,"msg":"传入的json数据不正确"}
+2017-09-25 16:55:03:109 INFO  ExternalController- request(15c8d0f6c07a400786adf6a43ed85057):service=adminLogin, params=%7B%22account%22%3A%22123123%22%7D=
+2017-09-25 16:55:03:110 INFO  ExternalController- response(15c8d0f6c07a400786adf6a43ed85057):{"code":-902,"data":null,"msg":"传入的json数据不正确"}
+2017-09-25 16:56:19:369 INFO  ExternalController- request(c38763cb77e84fb986abbfd74f49f339):service=adminLogin, params={"account":"123123"}
+2017-09-25 16:56:19:370 INFO  ExternalController- response(c38763cb77e84fb986abbfd74f49f339):{"code":-903,"data":null,"msg":"参数不能为空:password"}
+2017-09-25 16:56:58:676 INFO  ExternalController- request(820b7c74aec247bfb2c6e213e174417a):service=adminLogin, params={"account":"test6","password":"123456"}
+2017-09-25 16:56:59:588 INFO  ExternalController- response(820b7c74aec247bfb2c6e213e174417a):{"code":0,"data":{"token":"f5b4393808ed4392809b3b56bb32274c"},"msg":"成功"}
+2017-09-25 16:57:05:266 INFO  ExternalController- request(b86ed9467ea54a16a9ccbd63b33b8a87):service=adminSetVIPProbation, params={"token":"f5b4393808ed4392809b3b56bb32274c"}
+2017-09-25 16:57:05:325 INFO  ExternalController- response(b86ed9467ea54a16a9ccbd63b33b8a87):{"code":-999,"data":null,"msg":"系统错误"}
+2017-09-25 17:01:21:154 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 12012 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:01:21:165 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:01:21:773 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:01:24:476 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:01:24:478 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:01:24:685 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:01:27:990 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-25 17:01:28:009 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-25 17:01:28:031 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-25 17:01:28:087 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 7.357 seconds (JVM running for 8.379)
+2017-09-25 17:01:53:773 INFO  [/jds]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-25 17:01:53:856 INFO  ExternalController- request(fed22c2486a9414ba863dbd505e13b9f):service=adminSetVIPProbation, params={"token":"f5b4393808ed4392809b3b56bb32274c"}
+2017-09-25 17:01:54:067 INFO  ExternalController- response(fed22c2486a9414ba863dbd505e13b9f):{"code":-903,"data":null,"msg":"参数不能为空:{0}"}
+2017-09-25 17:02:47:218 INFO  ExternalController- request(2b8296fdc6ae460583af50014ed1377b):service=adminSetVIPProbation, params={"token":"f5b4393808ed4392809b3b56bb32274c","proDay":14}
+2017-09-25 17:02:48:354 INFO  ExternalController- response(2b8296fdc6ae460583af50014ed1377b):{"code":0,"data":null,"msg":"成功"}
+2017-09-25 17:03:34:833 INFO  ExternalController- request(6c90b4beabc94ad1b5a5729f270e0c78):service=adminSetVIPProbation, params={"token":"f5b4393808ed4392809b3b56bb32274c","proDate":1506330208}
+2017-09-25 17:03:34:940 INFO  ExternalController- response(6c90b4beabc94ad1b5a5729f270e0c78):{"code":0,"data":null,"msg":"成功"}
+2017-09-25 17:06:12:163 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 2148 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:06:12:167 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:06:12:866 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:06:15:055 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:06:15:057 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:06:15:219 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:06:17:594 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-25 17:06:17:614 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-25 17:06:17:639 INFO  Http11NioProtocol- Pausing ProtocolHandler ["http-nio-80"]
+2017-09-25 17:06:17:639 INFO  StandardService- Stopping service Tomcat
+2017-09-25 17:06:17:729 INFO  LifecycleBase- The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-09-25 17:06:17:729 INFO  Http11NioProtocol- Stopping ProtocolHandler ["http-nio-80"]
+2017-09-25 17:06:17:729 INFO  Http11NioProtocol- Destroying ProtocolHandler ["http-nio-80"]
+2017-09-25 17:06:51:803 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 9972 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:06:51:807 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:06:52:377 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:06:54:647 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:06:54:648 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:06:54:793 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:06:57:308 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-25 17:06:57:335 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-25 17:06:57:354 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-25 17:06:57:384 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 5.935 seconds (JVM running for 6.523)
+2017-09-25 17:07:03:668 INFO  [/jds]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-25 17:07:03:743 INFO  ExternalController- request(1551616f999b4a359e703353ec2a723a):service=adminSetVIPProbation, params={"token":"f5b4393808ed4392809b3b56bb32274c"}
+2017-09-25 17:07:03:936 INFO  ExternalController- response(1551616f999b4a359e703353ec2a723a):{"code":-903,"data":null,"msg":"参数不能为空:proDay or proDate"}
+2017-09-25 17:08:29:086 INFO  ExternalController- request(4a0d8f712c0647f19cb95f8430be9948):service=adminGetUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","userType":"0","pageNo":"1","pageSize":"1"}
+2017-09-25 17:08:30:650 INFO  ExternalController- response(4a0d8f712c0647f19cb95f8430be9948):{"code":0,"data":{"totalSize":0,"userList":[]},"msg":"成功"}
+2017-09-25 17:08:41:500 INFO  ExternalController- request(acc77c05426d4c9f90103bc0293ea318):service=adminGetUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","userType":"0","pageNo":"1","pageSize":"1"}
+2017-09-25 17:08:41:554 INFO  ExternalController- response(acc77c05426d4c9f90103bc0293ea318):{"code":0,"data":{"totalSize":1,"userList":[{"createTime":null,"expiryDate":null,"headUrl":"","id":"1","mail":"","mobile":"11","nickName":"11","nube":"11","proDate":null,"registerTime":null,"updateTime":null}]},"msg":"成功"}
+2017-09-25 17:09:41:496 INFO  ExternalController- request(ba68b5e41a444520b681e1f82145d6f1):service=adminSearchUsers, params={"token":"f7fa73d3f5084e438eddab0aea1f00cb","pageNo":"1","pageSize":"1","searchType":"1","content":"13505154257"}
+2017-09-25 17:09:41:515 INFO  ExternalController- response(ba68b5e41a444520b681e1f82145d6f1):{"code":-907,"data":null,"msg":"授权令牌（token）无效"}
+2017-09-25 17:09:52:704 INFO  ExternalController- request(2f2cb9a5bc6340c09cf515d736deff50):service=adminSearchUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","pageNo":"1","pageSize":"1","searchType":"1","content":"13505154257"}
+2017-09-25 17:09:52:757 INFO  ExternalController- response(2f2cb9a5bc6340c09cf515d736deff50):{"code":0,"data":{"totalSize":0,"userList":[]},"msg":"成功"}
+2017-09-25 17:09:55:934 INFO  ExternalController- request(29e883cffa98436b94ff8102d191d4ba):service=adminSearchUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","pageNo":"1","pageSize":"1","searchType":"1","content":"11"}
+2017-09-25 17:09:55:985 INFO  ExternalController- response(29e883cffa98436b94ff8102d191d4ba):{"code":0,"data":{"totalSize":1,"userList":[{"createTime":null,"expiryDate":null,"headUrl":"","id":"1","mail":"","mobile":"11","nickName":"11","nube":"11","proDate":null,"registerTime":null,"updateTime":null}]},"msg":"成功"}
+2017-09-25 17:23:43:493 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 11456 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:23:43:497 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:23:44:149 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:27:30:096 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 8640 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:27:30:099 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:27:30:924 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:30:56:624 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 2596 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:30:56:627 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:30:57:217 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:30:59:410 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:30:59:412 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:30:59:569 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:31:00:612 INFO  StandardService- Stopping service Tomcat
+2017-09-25 17:33:09:316 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 11732 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:33:09:320 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:33:09:992 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:33:12:252 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:33:12:254 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:33:12:408 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:33:13:321 INFO  StandardService- Stopping service Tomcat
+2017-09-25 17:35:32:058 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 9380 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:35:32:061 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:35:32:821 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:35:34:894 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:35:34:896 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:35:35:039 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:35:37:405 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-25 17:35:37:424 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-25 17:35:37:445 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-25 17:35:37:475 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 5.779 seconds (JVM running for 6.396)
+2017-09-25 17:37:42:895 INFO  [/jds]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-25 17:37:42:974 INFO  ExternalController- request(9f1003f22c1d4f64b5990e06b823ab6a):service=adminSetVIPProbation, params={"token":"f5b4393808ed4392809b3b56bb32274c","proDate":"1506330208"}
+2017-09-25 17:37:43:315 INFO  ExternalController- response(9f1003f22c1d4f64b5990e06b823ab6a):{"code":-999,"data":null,"msg":"系统错误"}
+2017-09-25 17:39:26:466 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 6696 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:39:26:470 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:39:27:076 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:39:29:348 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:39:29:350 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:39:29:513 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:39:32:080 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-25 17:39:32:095 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-25 17:39:32:112 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-25 17:39:32:139 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 6.032 seconds (JVM running for 6.63)
+2017-09-25 17:39:56:858 INFO  [/jds]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-25 17:39:56:937 INFO  ExternalController- request(185bc38a69fb4d21a34158621b57c1c0):service=adminUpdateUserExp, params={"token":"f5b4393808ed4392809b3b56bb32274c","id":"1","expiryDate":"1506330208"}
+2017-09-25 17:40:00:278 INFO  ExternalController- response(185bc38a69fb4d21a34158621b57c1c0):{"code":0,"data":null,"msg":"成功"}
+2017-09-25 17:40:11:914 INFO  ExternalController- request(c5876ae9f5f54b9c951c35927b5e1182):service=adminUpdateUserExp, params={"token":"f5b4393808ed4392809b3b56bb32274c","id":"0","expiryDate":"1506330208"}
+2017-09-25 17:40:11:976 INFO  ExternalController- response(c5876ae9f5f54b9c951c35927b5e1182):{"code":0,"data":null,"msg":"成功"}
+2017-09-25 17:41:07:000 INFO  ExternalController- request(4ec7c69d085d476e91eb3b26fdd6a301):service=adminSetVIPProbation, params={"token":"f5b4393808ed4392809b3b56bb32274c","proDate":"1506330208"}
+2017-09-25 17:41:07:365 INFO  ExternalController- response(4ec7c69d085d476e91eb3b26fdd6a301):{"code":0,"data":null,"msg":"成功"}
+2017-09-25 17:57:46:208 INFO  JIDataServiceApplication- Starting JIDataServiceApplication on zhangmy with PID 644 (C:\P4V\workspace\005_Medical\web\src\JIDataService\target\classes started by zhang in C:\P4V\workspace\005_Medical\web\src\JIDataService)
+2017-09-25 17:57:46:211 INFO  JIDataServiceApplication- No active profile set, falling back to default profiles: default
+2017-09-25 17:57:47:041 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-25 17:57:49:112 INFO  StandardService- Starting service Tomcat
+2017-09-25 17:57:49:114 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-25 17:57:49:282 INFO  [/jds]- Initializing Spring embedded WebApplicationContext
+2017-09-25 17:57:51:655 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-25 17:57:51:674 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-25 17:57:51:694 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-25 17:57:51:726 INFO  JIDataServiceApplication- Started JIDataServiceApplication in 5.869 seconds (JVM running for 6.466)
+2017-09-25 17:58:14:805 INFO  [/jds]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-25 17:58:14:875 INFO  ExternalController- request(16d58f360e394e879ed09abe67a6dfdc):service=adminGetUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","userType":"0","pageNo":"1","pageSize":"1"}
+2017-09-25 17:58:16:502 INFO  ExternalController- response(16d58f360e394e879ed09abe67a6dfdc):{"code":0,"data":{"totalSize":1,"userList":[{"createTime":null,"expiryDate":"1506268800","headUrl":"","id":"1","mail":"","mobile":"11","nickName":"11","nube":"11","registerTime":null,"userType":"1"}]},"msg":"成功"}
+2017-09-25 17:58:51:222 INFO  ExternalController- request(5bc224366446481aad759109bc7c06a7):service=adminGetUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","userType":"0","pageNo":"1","pageSize":"1"}
+2017-09-25 17:58:51:577 INFO  ExternalController- response(5bc224366446481aad759109bc7c06a7):{"code":-999,"data":null,"msg":"系统错误"}
+2017-09-25 17:59:37:259 INFO  ExternalController- request(fea47cfa64be4c3d97d9f9727fe628c1):service=adminGetUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","userType":"0","pageNo":"1","pageSize":"1"}
+2017-09-25 17:59:37:277 INFO  ExternalController- response(fea47cfa64be4c3d97d9f9727fe628c1):{"code":0,"data":{"totalSize":1,"userList":[{"createTime":null,"expiryDate":"1506182400","headUrl":"","id":"1","mail":"","mobile":"11","nickName":"11","nube":"11","registerTime":null,"userType":"3"}]},"msg":"成功"}
+2017-09-25 18:00:36:867 INFO  ExternalController- request(c37be8047b284c03afc824277240943f):service=adminSearchUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","content":"qq","pageNo":"1","pageSize":"1"}
+2017-09-25 18:00:36:868 INFO  ExternalController- response(c37be8047b284c03afc824277240943f):{"code":-903,"data":null,"msg":"参数不能为空:searchType"}
+2017-09-25 18:00:49:881 INFO  ExternalController- request(7e3b8ebaacfe473a954e0096d1fb3199):service=adminSearchUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","content":"qq","pageNo":"1","pageSize":"1","searchType":"1"}
+2017-09-25 18:00:52:495 INFO  ExternalController- response(7e3b8ebaacfe473a954e0096d1fb3199):{"code":0,"data":{"totalSize":0,"userList":[]},"msg":"成功"}
+2017-09-25 18:00:56:880 INFO  ExternalController- request(cedd2fa15e984a6798dbf79236866684):service=adminSearchUsers, params={"token":"f5b4393808ed4392809b3b56bb32274c","content":"11","pageNo":"1","pageSize":"1","searchType":"1"}
+2017-09-25 18:00:57:393 INFO  ExternalController- response(cedd2fa15e984a6798dbf79236866684):{"code":0,"data":{"totalSize":1,"userList":[{"createTime":null,"expiryDate":"1506182400","headUrl":"","id":"1","mail":"","mobile":"11","nickName":"11","nube":"11","registerTime":null,"userType":"3"}]},"msg":"成功"}

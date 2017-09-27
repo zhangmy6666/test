@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.redcdn.jds.systemadmin.dao.AdminLoginDao">
+    <!-- 根据用户密码查找数据库中信息 -->
+    <select id="getSystemAdminInfo"  resultMap="cn.redcdn.jds.common.dao.SystemAdminDao.systemAdminMap">
+        SELECT
+            *
+        FROM 
+            system_admin 
+        <where>
+            account = #{account} 
+        AND password = #{password} 
+        </where>
+    </select>
+
+</mapper>

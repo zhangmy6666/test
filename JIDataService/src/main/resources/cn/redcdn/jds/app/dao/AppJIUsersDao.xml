@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.redcdn.jds.app.dao.AppJIUsersDao">
+    <resultMap type="cn.redcdn.jds.common.entity.UserInfo" id="userInfoMap">
+        <!--  -->
+        <id column="id" property="id"/>
+        <!-- 视讯号 -->
+        <result column="nube" property="nube"/>
+        <!-- 昵称 -->
+        <result column="nick_name" property="nickName"/>
+        <!-- 手机 -->
+        <result column="mobile" property="mobile"/>
+        <!-- 邮箱 -->
+        <result column="mail" property="mail"/>
+        <!-- 头像 -->
+        <result column="head_url" property="headUrl"/>
+        <!-- 登记时间 -->
+        <result column="register_time" property="registerTime"/>
+        <!-- 试用截至日期 -->
+        <result column="pro_date" property="proDate"/>
+        <!-- 服务有效时间 -->
+        <result column="expiry_date" property="expiryDate"/>
+        <!-- 注册时间 -->
+        <result column="create_time" property="createTime"/>
+        <!-- 更新时间 -->
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+    <select id="queryByField" resultMap="userInfoMap">
+        SELECT *
+        FROM user_info
+        <where>
+			<choose>
+				<when test=" searchType != null and searchType == '1'.toString() ">
+					mobile IN
+	                <foreach collection="contents" index="index" item="content" separator="," open="(" close=")">
+	                    #{content}
+	                </foreach>
+				</when>
+				<when test=" searchType != null and searchType == '2'.toString() ">
+					mail IN
+	                <foreach collection="contents" index="index" item="content" separator="," open="(" close=")">
+	                    #{content}
+	                </foreach>
+				</when>
+				<when test=" searchType != null and searchType == '3'.toString() ">
+					nube IN
+	                <foreach collection="contents" index="index" item="content" separator="," open="(" close=")">
+	                    #{content}
+	                </foreach>
+				</when>
+				<otherwise>  
+	             	  <![CDATA[  1 <> 1   ]]>
+				</otherwise>
+			</choose>
+        </where>
+    </select>
+</mapper>

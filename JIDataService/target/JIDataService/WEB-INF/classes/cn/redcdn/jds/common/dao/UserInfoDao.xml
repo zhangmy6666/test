@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.redcdn.jds.common.dao.UserInfoDao">
+    <resultMap type="cn.redcdn.jds.common.entity.UserInfo" id="userInfoMap">
+        <!--  -->
+        <id column="id" property="id"/>
+        <!-- 视讯号 -->
+        <result column="nube" property="nube"/>
+        <!-- 昵称 -->
+        <result column="nick_name" property="nickName"/>
+        <!-- 手机 -->
+        <result column="mobile" property="mobile"/>
+        <!-- 邮箱 -->
+        <result column="mail" property="mail"/>
+        <!-- 头像 -->
+        <result column="head_url" property="headUrl"/>
+        <!-- 登记时间 -->
+        <result column="register_time" property="registerTime"/>
+        <!-- 试用截至日期 -->
+        <result column="pro_date" property="proDate"/>
+        <!-- 服务有效时间 -->
+        <result column="expiry_date" property="expiryDate"/>
+        <!-- 注册时间 -->
+        <result column="create_time" property="createTime"/>
+        <!-- 更新时间 -->
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <!-- 将数据插入数据库中 -->
+    <insert id="insert" parameterType="cn.redcdn.jds.common.entity.UserInfo">
+        INSERT INTO
+        user_info (
+            id,
+            nube,
+            nick_name,
+            mobile,
+            mail,
+            head_url,
+            register_time,
+            pro_date,
+            expiry_date,
+            create_time,
+            update_time) 
+        VALUES (
+            #{id},
+            #{nube},
+            #{nickName},
+            #{mobile},
+            #{mail},
+            #{headUrl},
+            #{registerTime},
+            #{proDate},
+            #{expiryDate},
+            #{createTime},
+            #{updateTime}) 
+    </insert>
+
+    <!-- 根据key查找数据库中信息 -->
+    <select id="queryByKey" resultMap="userInfoMap">
+        SELECT
+            * 
+        FROM 
+            user_info 
+        <where>
+            id = #{id} 
+        </where>
+    </select>
+
+    <!-- 根据key更新数据库中信息 -->
+    <update id="updateByKey">
+        Update
+            user_info
+        <set>
+            <if test = " nube != null ">
+                nube = #{nube},
+            </if>
+            <if test = " nickName != null ">
+                nick_name = #{nickName},
+            </if>
+            <if test = " mobile != null ">
+                mobile = #{mobile},
+            </if>
+            <if test = " mail != null ">
+                mail = #{mail},
+            </if>
+            <if test = " headUrl != null ">
+                head_url = #{headUrl},
+            </if>
+            <if test = " registerTime != null ">
+                register_time = #{registerTime},
+            </if>
+            <if test = " proDate != null ">
+                pro_date = #{proDate},
+            </if>
+            <if test = " expiryDate != null ">
+                expiry_date = #{expiryDate},
+            </if>
+            <if test = " createTime != null ">
+                create_time = #{createTime},
+            </if>
+            <if test = " updateTime != null ">
+                update_time = #{updateTime}
+            </if>
+        </set>
+        <where>
+            id = #{id} 
+        </where>
+    </update>
+
+    <!-- 根据Key删除数据库中信息 -->
+    <delete id="deleteByKey">
+        DELETE FROM
+            user_info 
+        <where>
+            id = #{id} 
+        </where>
+    </delete>
+    <!-- 根据field查找数据库中信息 -->
+    <select id="queryByField" resultMap="userInfoMap">
+        SELECT
+            * 
+        FROM 
+            user_info 
+        <where>
+               ${fieldName} = #{fieldValue} 
+        </where>
+    </select>
+
+</mapper>

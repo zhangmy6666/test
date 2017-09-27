@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.redcdn.jds.app.dao.VipProbationExtendDao">
+    <resultMap type="cn.redcdn.jds.common.entity.VipProbation" id="vipProbationMap">
+        <!--  -->
+        <id column="id" property="id"/>
+        <!-- 试用期设置模式 -->
+        <result column="pro_mode" property="proMode"/>
+        <!-- 试用天数 -->
+        <result column="pro_day" property="proDay"/>
+        <!-- 试用截至日期 -->
+        <result column="pro_date" property="proDate"/>
+        <!-- 创建时间 -->
+        <result column="create_time" property="createTime"/>
+        <!-- 更新时间 -->
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+
+    <!-- 查找表中全部信息 -->
+    <select id="queryAll" resultMap="vipProbationMap">
+        SELECT
+            * 
+        FROM 
+            vip_probation
+    </select>
+
+</mapper>
