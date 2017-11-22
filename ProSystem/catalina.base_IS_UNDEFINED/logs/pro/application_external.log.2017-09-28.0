@@ -1,0 +1,87 @@
+2017-09-28 15:42:20:999 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 8988 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-09-28 15:42:21:002 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-09-28 15:42:21:771 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-28 15:42:23:758 INFO  StandardService- Starting service Tomcat
+2017-09-28 15:42:23:759 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-28 15:42:23:902 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-09-28 15:42:24:538 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@56febdc, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-09-28 15:42:34:339 INFO  Node- Connected to Node 10.134.101.253
+2017-09-28 15:42:43:760 INFO  ConfigurationProvider- Opened bucket zmy
+2017-09-28 15:42:44:054 INFO  Node- Disconnected from Node 10.134.101.253
+2017-09-28 15:42:44:054 INFO  ConfigurationProvider- Closed bucket zmy
+2017-09-28 15:42:44:069 INFO  CoreEnvironment- Shutdown Core Scheduler: success 
+2017-09-28 15:42:44:069 INFO  CoreEnvironment- Shutdown Runtime Metrics Collector: success 
+2017-09-28 15:42:44:070 INFO  CoreEnvironment- Shutdown Latency Metrics Collector: success 
+2017-09-28 15:42:44:074 INFO  CoreEnvironment- Shutdown IoPool: success 
+2017-09-28 15:42:45:862 INFO  CoreEnvironment- Shutdown Netty: success 
+2017-09-28 15:42:45:867 INFO  StandardService- Stopping service Tomcat
+2017-09-28 15:43:34:297 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 9600 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-09-28 15:43:34:301 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-09-28 15:43:35:158 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-28 15:43:36:844 INFO  StandardService- Starting service Tomcat
+2017-09-28 15:43:36:846 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-28 15:43:36:983 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-09-28 15:43:37:515 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@56febdc, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-09-28 15:43:47:245 INFO  Node- Connected to Node 10.134.101.253
+2017-09-28 15:43:56:676 INFO  ConfigurationProvider- Opened bucket zmy
+2017-09-28 15:43:58:364 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-28 15:43:58:379 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-28 15:43:58:381 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-28 15:43:58:418 INFO  ProSystemApplication- Started ProSystemApplication in 24.46 seconds (JVM running for 25.042)
+2017-09-28 15:54:29:272 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 8676 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-09-28 15:54:29:275 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-09-28 15:54:30:189 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-28 15:54:32:109 INFO  StandardService- Starting service Tomcat
+2017-09-28 15:54:32:111 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-28 15:54:32:263 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-09-28 15:54:32:799 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@56febdc, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-09-28 15:54:42:546 INFO  Node- Connected to Node 10.134.101.253
+2017-09-28 15:54:51:977 INFO  ConfigurationProvider- Opened bucket zmy
+2017-09-28 15:54:52:257 INFO  InitService- init...
+2017-09-28 15:54:52:306 INFO  ConfigurationProvider- Closed bucket zmy
+2017-09-28 15:54:52:308 INFO  Node- Disconnected from Node 10.134.101.253
+2017-09-28 15:54:52:323 INFO  CoreEnvironment- Shutdown Core Scheduler: success 
+2017-09-28 15:54:52:323 INFO  CoreEnvironment- Shutdown Runtime Metrics Collector: success 
+2017-09-28 15:54:52:323 INFO  CoreEnvironment- Shutdown Latency Metrics Collector: success 
+2017-09-28 15:54:52:324 INFO  CoreEnvironment- Shutdown IoPool: success 
+2017-09-28 15:54:54:108 INFO  CoreEnvironment- Shutdown Netty: success 
+2017-09-28 15:54:54:113 INFO  StandardService- Stopping service Tomcat
+2017-09-28 16:03:58:340 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 11236 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-09-28 16:03:58:343 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-09-28 16:03:58:959 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-28 16:04:00:966 INFO  StandardService- Starting service Tomcat
+2017-09-28 16:04:00:967 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-28 16:04:01:116 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-09-28 16:04:01:672 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@18388a3c, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-09-28 16:04:11:408 INFO  Node- Connected to Node 10.134.101.253
+2017-09-28 16:04:20:842 INFO  ConfigurationProvider- Opened bucket zmy
+2017-09-28 16:04:21:111 INFO  InitService- init...
+2017-09-28 16:04:21:148 INFO  ConfigurationProvider- Closed bucket zmy
+2017-09-28 16:04:21:149 INFO  Node- Disconnected from Node 10.134.101.253
+2017-09-28 16:04:21:159 INFO  CoreEnvironment- Shutdown IoPool: success 
+2017-09-28 16:04:21:160 INFO  CoreEnvironment- Shutdown Core Scheduler: success 
+2017-09-28 16:04:21:160 INFO  CoreEnvironment- Shutdown Runtime Metrics Collector: success 
+2017-09-28 16:04:21:160 INFO  CoreEnvironment- Shutdown Latency Metrics Collector: success 
+2017-09-28 16:04:22:918 INFO  CoreEnvironment- Shutdown Netty: success 
+2017-09-28 16:04:22:923 INFO  StandardService- Stopping service Tomcat
+2017-09-28 16:05:23:438 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 9280 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-09-28 16:05:23:440 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-09-28 16:05:24:139 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-28 16:05:26:021 INFO  StandardService- Starting service Tomcat
+2017-09-28 16:05:26:022 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-28 16:05:26:156 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-09-28 16:05:26:704 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@deb3b60, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-09-28 16:05:36:409 INFO  Node- Connected to Node 10.134.101.253
+2017-09-28 16:05:45:810 INFO  ConfigurationProvider- Opened bucket zmy
+2017-09-28 16:05:46:063 INFO  InitService- init...
+2017-09-28 16:05:47:388 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-09-28 16:05:47:410 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-09-28 16:05:47:412 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-09-28 16:05:47:443 INFO  ProSystemApplication- Started ProSystemApplication in 24.348 seconds (JVM running for 24.935)
+2017-09-28 16:11:17:085 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 6304 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-09-28 16:11:17:088 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-09-28 16:11:17:766 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-09-28 16:11:19:668 INFO  StandardService- Starting service Tomcat
+2017-09-28 16:11:19:670 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-09-28 16:11:19:806 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-09-28 16:11:20:083 INFO  StandardService- Stopping service Tomcat

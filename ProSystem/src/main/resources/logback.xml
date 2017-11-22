@@ -52,7 +52,7 @@
 	</logger>
 	
 	<logger name="cn.zmy">
-		<level value="DEBUG" />
+		<level value="INFO" />
 	</logger>	
 
 	<logger name="org.apache.ibatis">
