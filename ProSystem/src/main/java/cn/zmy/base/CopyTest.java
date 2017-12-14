@@ -1,4 +1,4 @@
-package cn.zmy.obj;
+package cn.zmy.base;
 
 import cn.zmy.util.StringUtil;
 

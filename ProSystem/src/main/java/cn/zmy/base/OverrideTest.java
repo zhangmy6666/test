@@ -10,6 +10,19 @@ public class OverrideTest {
 	public static void main(String[] args) {
 		Child child = new Child();
 		child.f(1);
+		child.print();
+		child.ff();
+		child.fi();
+		
+		Father baba = new Child();
+		baba.f(1);
+//		baba.print(); // don't work  父类private用不了 子类重新写的方法没有重写父类也用不了
+//		baba.ff();  //don't work 父类根本没有
+		baba.fi();
+		
+		Father fafa = new Father();
+		fafa.f(1);
+		fafa.fi();
 	}
 	
 
@@ -28,6 +41,14 @@ class Father {
 //	public int f(int i) {
 //		return i;
 //	}
+    
+    private void print() {
+		System.out.println("aaa");
+	}
+    
+    final void fi() {
+    	System.out.println("can't over");
+    }
 }
 
 class Child extends Father{
@@ -52,4 +73,18 @@ class Child extends Father{
 		System.out.println("I am son");
 //		throw new IOException();
 	}
+	
+	// 不是重写 父类是private 所以感知不到
+	void print() {
+    	System.out.println("bbb");
+    }
+	
+	void ff() {
+		System.out.println("my new method");
+	}
+	
+	// 可以感知到父类也有此方法 所以不能重复定义
+//	void fi() {
+//    	System.out.println("can't over");
+//    }
 }
