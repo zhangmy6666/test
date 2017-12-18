@@ -38,23 +38,24 @@ public class Test {
 		// 方法内的局部变量必须初始化；
 //		int i;
 //		System.out.println(i);
-		Test tt = new Test();
-		tt.print();
+//		Test tt = new Test();
+//		tt.print();
+//		
+//		System.out.println(new Random(47).nextInt(20));
+//		
+//		Test test = new Test();
+//		System.out.println(test.str);
+//		Test test2 = new Test("xyz");
+//		System.out.println(test2.str);
+//		System.out.println("b===" + test.b);
+//		System.out.println("a===" + test.a);
 		
-		System.out.println(new Random(47).nextInt(20));
-		
-		Test test = new Test();
-		System.out.println(test.str);
-		Test test2 = new Test("xyz");
-		System.out.println(test2.str);
-		System.out.println("b===" + test.b);
-		System.out.println("a===" + test.a);
-		
-		// 一个对象初始化时一定要先保证其父类部分初始化再初始化自己的
+		// 一个对象初始化时一定要先保证其父类部分初始化再初始化自己的，组合不是如此
 		// 加载类也是先加载父类
 //		new C();
 		// 不会加载子类
-		new B();
+//		new B();
+		new D();
 	}
 
 }
@@ -70,7 +71,15 @@ class A {
     static { System.out.println("static A"); }  
     { System.out.println("A"); }  
     public A() { System.out.println("cons A"); }  
-}  
+}
+
+class D {
+	A a = new A(); // 组合 非继承
+	static { System.out.println("static D"); }  
+	{ System.out.println("D"); }
+	public D() {System.out.println("cons D");}
+	A a1 = new A(); // 变量的初始化 即使写在构造器后面，也是在任何方法调用之前初始化
+}
   
 class C extends B {  
     static { System.out.println("static C"); }  

@@ -3,8 +3,6 @@ package cn.zmy.leetcode;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Determine whether an integer is a palindrome. Do this without extra space
