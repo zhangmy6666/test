@@ -1,13 +1,54 @@
 package cn.zmy;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
 import org.apache.commons.lang.StringUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
+
 public class Test {
+	class Person {
+		String name;
+
+		public Person(String name) {
+			this.name = name;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+		
+	}
 
 	public static void main(String[] args) {
+//		List<Person> list = new ArrayList<Person> ();
+//		list.add(new Test().new Person("James"));
+//		list.add(new Test().new Person("kobe"));
+////		list.add(new Test().new Person("tracy"));
+//		
+//		List<String> listB = new ArrayList<String>();
+//		listB.add("kobe");
+//		listB.add("james");
+//		listB.add("tracy");
+//		for(int i =0;i<listB.size();i++) {
+//			String s = listB.get(i); 
+//			for(Person p:list) {
+//				String name = p.getName();
+//				if (s.equalsIgnoreCase(name)) {
+//					listB.remove(s);
+//				}
+//	        }
+//		}
+//		System.out.println("James".equalsIgnoreCase("james"));
+//		System.out.println(listB.toString());
 //		String result = "{\"code\":0,\"data\":{\"homeOfficialAccountList\":["
 //				+ "{\"id\":\"8d0d0784fdc14cb686ae9ede25369bf7\"}]},\"msg\":\"\"}";
 //		JSONObject resultObj = parseObject(result);
@@ -49,7 +90,8 @@ public class Test {
 //        {
 //        	System.out.println("ar is null");
 //        }
-		
+		System.out.println((int)'0');
+		System.out.println((int)'9');
         
 	}
 	

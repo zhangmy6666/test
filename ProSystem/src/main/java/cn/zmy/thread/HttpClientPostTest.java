@@ -25,18 +25,14 @@ public class HttpClientPostTest
 		int size = 2;
 		final CountDownLatch cdl = new CountDownLatch(size);
         ExecutorService es = Executors.newFixedThreadPool(500);
-        for (int i = 0; i < (0 + size); i++) {
+        for (int i = 0; i < (0 + 5); i++) {
             es.execute(new Runnable() {
                 @Override
                 public void run() {
                     try {
-//                        
-                        String strJSON = HttpUtil.sendPost("http://testmedical.butel.com:93/mds/hpu/csl/accept",
-                            "{\"token\":\"9d819167-4674-4296-bf6a-e7ce251bf9cb_e16557a20eae4093874c3faff893a62e\","
-                            + "\"id\":\"03517fad53ed467a99e1e74f5235dcf8\"}");
-//                        String strJSON = HttpUtil.sendPost("http://localhost/hpu/csl/accept",
-//                                "{\"token\":\"9d819167-4674-4296-bf6a-e7ce251bf9cb_e16557a20eae4093874c3faff893a62e\","
-//                                + "\"id\":\"03517fad53ed467a99e1e74f5235dcf8\"}");
+                        String strJSON = HttpUtil.sendPost("http://localhost/hpu/test",
+                            "{\"oper\":\"set\"," + "\"key\":\"ceshi\","
+                            + "\"value\":"+ System.currentTimeMillis() + "}");
                         System.err.println(strJSON);
 						cdl.countDown();
 					} catch (Exception e) {

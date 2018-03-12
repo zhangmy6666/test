@@ -1,0 +1,137 @@
+2017-11-14 15:44:20:191 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 11176 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 15:44:20:218 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 15:44:21:374 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 15:44:25:458 INFO  StandardService- Starting service Tomcat
+2017-11-14 15:44:25:460 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 15:44:25:663 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 15:44:26:036 INFO  StandardService- Stopping service Tomcat
+2017-11-14 15:48:24:575 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 6448 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 15:48:24:578 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 15:48:25:369 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 15:48:27:481 INFO  StandardService- Starting service Tomcat
+2017-11-14 15:48:27:483 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 15:48:27:626 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 15:48:27:889 INFO  StandardService- Stopping service Tomcat
+2017-11-14 15:51:17:661 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 8888 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 15:51:17:664 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 15:51:18:377 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 15:51:20:570 INFO  StandardService- Starting service Tomcat
+2017-11-14 15:51:20:571 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 15:51:20:715 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 15:51:20:963 INFO  InitService- init...
+2017-11-14 15:51:20:963 INFO  InitService- init...
+2017-11-14 15:51:23:652 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@78cd163b, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-11-14 15:51:34:104 INFO  Node- Connected to Node 10.134.101.253
+2017-11-14 15:51:43:605 INFO  ConfigurationProvider- Opened bucket zmy
+2017-11-14 15:51:44:369 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 15:51:44:416 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 15:51:44:417 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 15:51:44:469 INFO  ProSystemApplication- Started ProSystemApplication in 27.165 seconds (JVM running for 27.792)
+2017-11-14 15:52:12:229 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 15:52:12:451 INFO  ExternalController- request(36e40db15c984ef3a5e0c7e992be45ab):path=/mybatistest, params={}
+2017-11-14 15:52:13:241 INFO  ExternalController- totalExeTime:747 response(36e40db15c984ef3a5e0c7e992be45ab):{"code":0,"data":null,"msg":""}
+2017-11-14 15:53:53:506 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 8624 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 15:53:53:510 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 15:53:54:109 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 15:53:56:256 INFO  StandardService- Starting service Tomcat
+2017-11-14 15:53:56:258 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 15:53:56:425 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 15:53:56:695 INFO  InitService- init...
+2017-11-14 15:53:56:695 INFO  InitService- init...
+2017-11-14 15:53:58:242 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@288ca5f0, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-11-14 15:54:08:095 INFO  Node- Connected to Node 10.134.101.253
+2017-11-14 15:54:17:501 INFO  ConfigurationProvider- Opened bucket zmy
+2017-11-14 15:54:18:047 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 15:54:18:062 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 15:54:18:064 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 15:54:18:090 INFO  ProSystemApplication- Started ProSystemApplication in 24.913 seconds (JVM running for 25.482)
+2017-11-14 15:56:18:324 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 5888 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 15:56:18:331 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 15:56:19:119 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 15:56:21:468 INFO  StandardService- Starting service Tomcat
+2017-11-14 15:56:21:470 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 15:56:24:029 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 15:56:25:988 INFO  InitService- init...
+2017-11-14 15:56:25:989 INFO  InitService- init...
+2017-11-14 15:56:27:948 INFO  CouchbaseCore- CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword=false, sslKeystore=null, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, memcachedHashingStrategy=DefaultMemcachedHashingStrategy, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.3.7 (git: 2.3.7, core: 1.3.7-dirty), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, disconnectTimeout=25000, requestBufferWaitStrategy=com.couchbase.client.core.env.DefaultCoreEnvironment$2@7cff3f1d, queryTimeout=7500, viewTimeout=7500, kvTimeout=2500, connectTimeout=15000, dnsSrvEnabled=false}
+2017-11-14 15:56:37:764 INFO  Node- Connected to Node 10.134.101.253
+2017-11-14 15:56:47:210 INFO  ConfigurationProvider- Opened bucket zmy
+2017-11-14 15:56:48:254 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 15:56:48:271 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 15:56:48:273 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 15:56:48:339 INFO  ProSystemApplication- Started ProSystemApplication in 60.51 seconds (JVM running for 77.421)
+2017-11-14 15:57:05:642 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 15:57:09:784 INFO  ExternalController- request(e0d96efe491e49c38faa39f3dbb805db):path=/mybatistest, params={}
+2017-11-14 15:57:38:502 INFO  ExternalController- totalExeTime:28685 response(e0d96efe491e49c38faa39f3dbb805db):{"code":0,"data":null,"msg":""}
+2017-11-14 16:00:29:735 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 11508 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 16:00:29:738 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 16:00:30:352 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 16:00:32:430 INFO  StandardService- Starting service Tomcat
+2017-11-14 16:00:32:432 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 16:00:32:584 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 16:00:32:844 INFO  InitService- init...
+2017-11-14 16:00:32:844 INFO  InitService- init...
+2017-11-14 16:00:34:365 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 16:00:34:383 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 16:00:34:405 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 16:00:34:434 INFO  ProSystemApplication- Started ProSystemApplication in 5.045 seconds (JVM running for 5.641)
+2017-11-14 16:00:39:412 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 16:00:39:637 INFO  ExternalController- request(fae52e344fe24c22ae661799af68fb53):path=/mybatistest, params={}
+2017-11-14 16:00:40:327 INFO  ExternalController- totalExeTime:669 response(fae52e344fe24c22ae661799af68fb53):{"code":0,"data":null,"msg":""}
+2017-11-14 16:02:12:136 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 6532 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 16:02:12:139 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 16:02:12:915 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 16:02:14:844 INFO  StandardService- Starting service Tomcat
+2017-11-14 16:02:14:848 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 16:02:14:973 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 16:02:15:245 INFO  InitService- init...
+2017-11-14 16:02:15:246 INFO  InitService- init...
+2017-11-14 16:02:16:898 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 16:02:16:916 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 16:02:16:937 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 16:02:16:971 INFO  ProSystemApplication- Started ProSystemApplication in 5.154 seconds (JVM running for 5.747)
+2017-11-14 16:02:27:111 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 16:02:27:317 INFO  ExternalController- request(a501fc69e7814703963dab92eb1895bb):path=/mybatistest, params={}
+2017-11-14 16:02:27:999 INFO  ExternalController- totalExeTime:642 response(a501fc69e7814703963dab92eb1895bb):{"code":0,"data":null,"msg":""}
+2017-11-14 16:03:00:129 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 9288 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 16:03:00:132 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 16:03:00:771 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 16:03:02:765 INFO  StandardService- Starting service Tomcat
+2017-11-14 16:03:02:767 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 16:03:02:909 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 16:03:03:205 INFO  InitService- init...
+2017-11-14 16:03:03:205 INFO  InitService- init...
+2017-11-14 16:03:04:714 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 16:03:04:735 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 16:03:04:753 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 16:03:04:813 INFO  ProSystemApplication- Started ProSystemApplication in 5.018 seconds (JVM running for 5.582)
+2017-11-14 16:03:14:539 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 16:03:14:766 INFO  ExternalController- request(ca595565aa694468a91ac3927183588e):path=/mybatistest, params={}
+2017-11-14 16:03:15:440 INFO  ExternalController- totalExeTime:640 response(ca595565aa694468a91ac3927183588e):{"code":0,"data":null,"msg":""}
+2017-11-14 16:39:32:148 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 12500 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 16:39:32:156 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 16:39:32:973 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 16:39:35:202 INFO  StandardService- Starting service Tomcat
+2017-11-14 16:39:35:204 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 16:39:37:223 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 16:39:42:689 INFO  InitService- init...
+2017-11-14 16:39:42:690 INFO  InitService- init...
+2017-11-14 16:39:44:774 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 16:39:44:794 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 16:39:44:816 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 16:39:44:896 INFO  ProSystemApplication- Started ProSystemApplication in 37.888 seconds (JVM running for 42.953)
+2017-11-14 16:39:48:953 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 16:39:52:883 INFO  ExternalController- request(4290b42cc7ee46139926832a3cc57e76):path=/mybatistest, params={}
+2017-11-14 16:43:55:981 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 6928 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-14 16:43:55:988 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-14 16:43:56:811 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 16:43:59:131 INFO  StandardService- Starting service Tomcat
+2017-11-14 16:43:59:133 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-14 16:44:01:508 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-14 16:44:07:150 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-14 16:44:07:173 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-14 16:44:07:194 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-14 16:44:07:273 INFO  ProSystemApplication- Started ProSystemApplication in 45.406 seconds (JVM running for 50.69)
+2017-11-14 16:44:15:800 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 16:44:21:358 INFO  ExternalController- request(f733304729ab41b5a297a8770e92fab6):path=/mybatistest, params={}
+2017-11-14 16:44:40:617 INFO  ExternalController- totalExeTime:19220 response(f733304729ab41b5a297a8770e92fab6):{"code":0,"data":null,"msg":""}

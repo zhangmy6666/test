@@ -1,0 +1,26 @@
+2017-11-16 13:46:55:072 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 9864 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-16 13:46:55:076 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-16 13:46:56:662 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-16 13:46:58:624 INFO  StandardService- Starting service Tomcat
+2017-11-16 13:46:58:625 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-16 13:46:58:815 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-16 13:47:00:614 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-16 13:47:00:642 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-16 13:47:00:755 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-16 13:47:00:789 INFO  ProSystemApplication- Started ProSystemApplication in 6.617 seconds (JVM running for 8.229)
+2017-11-16 13:47:32:631 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-16 13:47:32:901 INFO  ExternalController- request(79317f149af5492fb20bff9d18cb926b):path=/mybatistest, params=null
+2017-11-16 13:47:32:971 INFO  ExternalController- totalExeTime:16 response(79317f149af5492fb20bff9d18cb926b):{"code":0,"data":null,"msg":""}
+2017-11-16 13:50:24:569 INFO  ProSystemApplication- Starting ProSystemApplication on zhangmy with PID 12168 (D:\git\ProSystem\target\classes started by zhang in D:\git\ProSystem)
+2017-11-16 13:50:24:572 INFO  ProSystemApplication- No active profile set, falling back to default profiles: default
+2017-11-16 13:50:25:311 INFO  Version- HV000001: Hibernate Validator 5.3.5.Final
+2017-11-16 13:50:27:430 INFO  StandardService- Starting service Tomcat
+2017-11-16 13:50:27:432 INFO  StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-11-16 13:50:27:582 INFO  [/pro]- Initializing Spring embedded WebApplicationContext
+2017-11-16 13:50:29:401 INFO  Http11NioProtocol- Initializing ProtocolHandler ["http-nio-80"]
+2017-11-16 13:50:29:419 INFO  Http11NioProtocol- Starting ProtocolHandler ["http-nio-80"]
+2017-11-16 13:50:29:439 INFO  NioSelectorPool- Using a shared selector for servlet write/read
+2017-11-16 13:50:29:473 INFO  ProSystemApplication- Started ProSystemApplication in 5.325 seconds (JVM running for 6.011)
+2017-11-16 13:50:54:816 INFO  [/pro]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-16 13:50:55:073 INFO  ExternalController- request(910edceaaa2e4efa954d8428a150ff2d):path=/mybatistest, params=null
+2017-11-16 13:50:55:912 INFO  ExternalController- totalExeTime:803 response(910edceaaa2e4efa954d8428a150ff2d):{"code":0,"data":null,"msg":""}

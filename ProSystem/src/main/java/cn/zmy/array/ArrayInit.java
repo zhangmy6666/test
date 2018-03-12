@@ -11,8 +11,8 @@ public class ArrayInit {
 	}
 
 	public static void main(String[] args) {
-		ArrayInit[] test = new ArrayInit[10];
-		ArrayInit[] test1 = new ArrayInit[]{new ArrayInit("hello")};
+//		ArrayInit[] test = new ArrayInit[10];
+//		ArrayInit[] test1 = new ArrayInit[]{new ArrayInit("hello")};
 		// 没有初始化时编译器不允许指定数组的大小 要为数组分配存储空间，必须初始化；初始化必须指定大小
 		// a2是数组的引用 默认给引用分配了足够的空间
 		// a, a1 引用的数组已初始化
@@ -32,15 +32,15 @@ public class ArrayInit {
 //		因此查看类名的时候会发现是很奇怪的类似于"[I"这样的样子，
 //		这个直接创建的对象的父类就是Object，
 //		所以可以调用Object中的所有方法，包括toString()。*/
-//		List<String> list = new ArrayList<String>();
-//		list.add("a");
-//		list.add("b");
-//		String[] arr = list.toArray(new String[list.size()]);
+		List<String> list = new ArrayList<String>();
+		list.add("a");
+		list.add("b");
+		String[] arr = list.toArray(new String[list.size()]);
 ////		String[] arr1 = (String[]) list.toArray();// Object cannot be cast to String
 //		Object[] arr2 = list.toArray();
-//		System.out.println(list);  // 数组可以直接打印
-//		System.out.println(arr.toString());
-//		System.out.println(Arrays.toString(arr));
+		System.out.println(list);  // 数组可以直接打印
+		System.out.println(arr);
+		System.out.println(Arrays.toString(arr));
 //		System.out.println(arr.length);
 //		System.out.println(arr2.length);
 

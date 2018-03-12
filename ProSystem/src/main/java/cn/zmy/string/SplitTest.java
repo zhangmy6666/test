@@ -13,6 +13,9 @@ public class SplitTest {
 		{
 			System.out.println(arr1[i]);
 		}
+		
+		String token = "e9ecb9c5533640d69bde-675a649cce1f";
+    	System.out.println(token.split("_")[0]);
 	}
 
 }

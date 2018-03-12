@@ -1,0 +1,39 @@
+2017-11-09 14:34:49:774 ERROR HttpUtil- Exception
+java.net.MalformedURLException: unknown protocol: localhost
+	at java.net.URL.<init>(URL.java:600)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at cn.zmy.http.HttpUtil.sendPost(HttpUtil.java:66)
+	at cn.zmy.http.Test.main(Test.java:23)
+2017-11-09 14:35:02:263 ERROR HttpUtil- Exception
+java.net.MalformedURLException: no protocol: 127.0.0.1:8080/SyncService/callService
+	at java.net.URL.<init>(URL.java:593)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at cn.zmy.http.HttpUtil.sendPost(HttpUtil.java:66)
+	at cn.zmy.http.Test.main(Test.java:23)
+2017-11-09 14:35:51:320 ERROR HttpUtil- Exception
+java.net.MalformedURLException: no protocol: 10.134.101.164:8080/SyncService/SyncService/callService
+	at java.net.URL.<init>(URL.java:593)
+	at java.net.URL.<init>(URL.java:490)
+	at java.net.URL.<init>(URL.java:439)
+	at cn.zmy.http.HttpUtil.sendPost(HttpUtil.java:66)
+	at cn.zmy.http.Test.main(Test.java:23)
+2017-11-09 14:36:13:997 ERROR HttpUtil- Exception
+java.io.FileNotFoundException: http://10.134.101.164:8080/SyncService/SyncService/callService
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1872)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at cn.zmy.http.HttpUtil.sendPost(HttpUtil.java:77)
+	at cn.zmy.http.Test.main(Test.java:23)
+2017-11-09 14:37:03:274 ERROR HttpUtil- Exception
+java.io.FileNotFoundException: http://10.134.101.164:8080/SyncService/SyncService/callServiceservice=UpdateDatabase&params={'line':"20171109141718267|1|{'meeting':{'accountId':'61000070','beginTime':1510208216999,'boxAccount':'','createTime':1510208217027,'deleteFlag':false,'endTime':1541744216999,'host':'61000070','id':17750,'meetingNo':'90017750','meetingPwd':'qsqsqs','meetingState':2,'meetingType':1,'realBeginTime':1510208216999,'speakersNum':6,'updateTime':1510208217027,'visiable':false},'meetingEquipment':[{'accountId':'14000155','createTime':1510208217051,'deleteFlag':false,'id':0,'meetingId':17750,'meetingNo':'90017750','updateTime':1510208217051}],'meetingInviter':[{'createTime':1510208217134,'id':0,'inviteeAccountId':'14000155','inviterAccountId':'61000070','meetingId':17750,'meetingNo':'90017750'}]}"}
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1872)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at cn.zmy.http.HttpUtil.sendGet(HttpUtil.java:31)
+	at cn.zmy.http.Test.main(Test.java:23)
+2017-11-09 14:37:15:314 ERROR HttpUtil- Exception
+java.io.FileNotFoundException: http://10.134.101.164:8080/SyncService/callServiceservice=UpdateDatabase&params={'line':"20171109141718267|1|{'meeting':{'accountId':'61000070','beginTime':1510208216999,'boxAccount':'','createTime':1510208217027,'deleteFlag':false,'endTime':1541744216999,'host':'61000070','id':17750,'meetingNo':'90017750','meetingPwd':'qsqsqs','meetingState':2,'meetingType':1,'realBeginTime':1510208216999,'speakersNum':6,'updateTime':1510208217027,'visiable':false},'meetingEquipment':[{'accountId':'14000155','createTime':1510208217051,'deleteFlag':false,'id':0,'meetingId':17750,'meetingNo':'90017750','updateTime':1510208217051}],'meetingInviter':[{'createTime':1510208217134,'id':0,'inviteeAccountId':'14000155','inviterAccountId':'61000070','meetingId':17750,'meetingNo':'90017750'}]}"}
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1872)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at cn.zmy.http.HttpUtil.sendGet(HttpUtil.java:31)
+	at cn.zmy.http.Test.main(Test.java:23)
