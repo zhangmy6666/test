@@ -3,6 +3,7 @@ package cn.zmy;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -29,6 +30,7 @@ public class Test {
 	}
 
 	public static void main(String[] args) {
+		System.out.println(Objects.equals( null,"haha"));
 //		List<Person> list = new ArrayList<Person> ();
 //		list.add(new Test().new Person("James"));
 //		list.add(new Test().new Person("kobe"));

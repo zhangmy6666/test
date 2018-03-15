@@ -3,7 +3,7 @@ package cn.zmy.exception;
 import java.util.Random;
 
 public class Loop {
-	void func() throws Exception {
+	void func() throws Exception{
 		Random random = new Random();
 		while (true) {
 			int i = random.nextInt(10);
@@ -16,7 +16,7 @@ public class Loop {
 		}
 	}
 	
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception{
 		new Loop().func();
 	}
 
