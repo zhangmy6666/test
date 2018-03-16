@@ -2,7 +2,9 @@ package cn.zmy.thread;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 import cn.zmy.util.HttpUtil;
 
@@ -12,8 +14,6 @@ public class HttpClientPostTest
 	private static int count = 0;
 	
     /**
-     * TODO
-     * main
      * @Title: main
      * @param args
      * @throws InterruptedException 
@@ -24,7 +24,7 @@ public class HttpClientPostTest
 		
 		int size = 2;
 		final CountDownLatch cdl = new CountDownLatch(size);
-        ExecutorService es = Executors.newFixedThreadPool(500);
+        ExecutorService es = new ThreadPoolExecutor(5, 20, 60, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
         for (int i = 0; i < (0 + 5); i++) {
             es.execute(new Runnable() {
                 @Override
