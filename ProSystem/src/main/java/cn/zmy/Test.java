@@ -33,11 +33,18 @@ public class Test {
 		change(s);
 		// 因为Integer是不可变对象,不能直接修改Integer的值,
 		// 只能生成一个新的对象然后指向它.这样函数里面的临时变量和传入的变量值(引用)已经不一样了
-		System.out.println(i);
-		System.out.println(p.getName());
-		System.out.println(s);
+//		System.out.println(i);
+//		System.out.println(p.getName());
+//		System.out.println(s);
+		
+		System.out.println(new Test().getClassPath());
 	}
 	
+	private String getClassPath() {
+		
+		return this.getClass().getResource("").getPath();
+	}
+
 	private static void change(String s) {
 		s = s + "aaaa";
 		

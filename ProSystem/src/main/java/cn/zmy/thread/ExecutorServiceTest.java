@@ -23,9 +23,13 @@ public class ExecutorServiceTest {
 
 		/**
 		 * runnable callable
+		 * 执行完任务之后是否可以获取执行结果
 		 */
 		/**
 		 * submit execute
+		 * 1、接收的参数不一样
+		 * 2、submit有返回值，而execute没有
+		 * 3、submit方便Exception处理
 		 */
 		// 创建10个任务并执行
 		for (int i = 0; i < 10; i++) {
@@ -35,19 +39,26 @@ public class ExecutorServiceTest {
 			resultList.add(future);
 		}
 		
-		cdl.countDown();
+		try {
+			cdl.await();
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			executorService.shutdownNow();
+			e1.printStackTrace();
+		}
 
 		// 遍历任务的结果
 		for (Future<String> fs : resultList) {
 			try {
 				System.out.println(fs.get());// 打印各个线程（任务）执行的结果
-				executorService.shutdown();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			} catch (ExecutionException e) {
-				executorService.shutdownNow();
 				e.printStackTrace();
-				return;
+				//如果其中一个task失败，其它的task就不需要执行了。
+				return;				
+			}finally {
+				executorService.shutdownNow();
 			}
 		}
 		
@@ -69,12 +80,17 @@ public class ExecutorServiceTest {
 		 */
 		public String call() throws Exception {
 			System.out.println("call()方法被自动调用,干活！！！             " + Thread.currentThread().getName());
-			if (new Random().nextBoolean())
+			if (new Random().nextBoolean()) {
+				cdl.countDown();
+				// 随机数生成器序列的均匀分布的 boolean 值。
 				throw new TaskException("Meet error in task." + Thread.currentThread().getName());
+			}
+				
 			// 一个模拟耗时的操作
 			for (int i = 999999999; i > 0; i--)
 				;
 			cdl.countDown();
+			System.out.println(cdl.getCount() + "       " + Thread.currentThread().getName());
 			return "call()方法被自动调用，任务的结果是：" + id + "    " + Thread.currentThread().getName();
 		}
 	}
