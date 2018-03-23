@@ -38,6 +38,11 @@ import org.springframework.util.StringUtils;
  * @see FileSystemResourceLoader
  * @see org.springframework.context.support.ClassPathXmlApplicationContext
  */
+/**
+ * 默认的资源加载器
+ * @author zhang
+ *
+ */
 public class DefaultResourceLoader implements ResourceLoader {
 
 	private ClassLoader classLoader;

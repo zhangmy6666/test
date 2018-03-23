@@ -1,4 +1,4 @@
-package cn.zmy.netty;
+package cn.zmy.nio.util;
 
 public class ByteHelp
 {

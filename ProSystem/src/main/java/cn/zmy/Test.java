@@ -1,6 +1,7 @@
 package cn.zmy;
 
 import org.apache.commons.lang.StringUtils;
+import org.springframework.util.Assert;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -38,6 +39,11 @@ public class Test {
 //		System.out.println(s);
 		
 		System.out.println(new Test().getClassPath());
+		testAssert("");
+	}
+	
+	public static void testAssert(String displayName) {
+		Assert.hasLength(displayName, "Display name must not be empty");
 	}
 	
 	private String getClassPath() {

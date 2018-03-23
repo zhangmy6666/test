@@ -37,6 +37,11 @@ import org.springframework.util.StringUtils;
  * @since 28.12.2003
  * @see java.net.URL
  */
+/**
+ * 访问网络资源的resource实现类
+ * @author zhang
+ *
+ */
 public class UrlResource extends AbstractFileResolvingResource {
 
 	/**

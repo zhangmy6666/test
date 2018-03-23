@@ -5,7 +5,7 @@
  * 版本：$Rev: 1193 $
  * 版权：All rights reserved.
  */
-package cn.zmy.netty;
+package cn.zmy.nio.netty;
 
 
 /**

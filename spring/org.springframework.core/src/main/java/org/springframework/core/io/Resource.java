@@ -42,6 +42,14 @@ import java.net.URL;
  * @see InputStreamResource
  * @see org.springframework.web.context.support.ServletContextResource
  */
+/**
+ * 对资源的抽象，每一个接口实现类都代表了一种资源类型，
+ * 如ClasspathResource、URLResource，FileSystemResource等。
+ * 每一个资源类型都封装了对某一种特定资源的访问策略。 * 
+ * 这个接口就是 Spring 为资源访问所提供的策略接口，该接口下的大量实现类用于实现不同的资源访问策略。
+ * @author zhang
+ *
+ */
 public interface Resource extends InputStreamSource {
 
 	/**
@@ -125,6 +133,10 @@ public interface Resource extends InputStreamSource {
 	 * <p>Implementations are also encouraged to return this value
 	 * from their <code>toString</code> method.
 	 * @see java.lang.Object#toString()
+	 */
+	/**
+	 * 通常是全限定文件名或实际 URL。
+	 * @return
 	 */
 	String getDescription();
 

@@ -50,6 +50,12 @@ public interface InputStreamSource {
 	 * @throws IOException if the stream could not be opened
 	 * @see org.springframework.mail.javamail.MimeMessageHelper#addAttachment(String, InputStreamSource)
 	 */
+	/**
+	 * 定位并打开资源，返回资源对应的输入流。每次调用都返回新的输入流。
+	 * 调用者必须负责关闭输入流。
+	 * @return
+	 * @throws IOException
+	 */
 	InputStream getInputStream() throws IOException;
 
 }

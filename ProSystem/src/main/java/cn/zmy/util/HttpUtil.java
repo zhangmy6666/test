@@ -1,6 +1,7 @@
 package cn.zmy.util;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -9,9 +10,23 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Map.Entry;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
+import org.apache.http.entity.mime.content.FileBody;
+import org.apache.http.entity.mime.content.StringBody;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.alibaba.fastjson.JSONObject;
 
 public class HttpUtil
 {
@@ -167,6 +182,62 @@ public class HttpUtil
 			out.append(new String(b, 0, n));
 		}
 		return out.toString();
+	}
+	
+	public static JSONObject postFile(JSONObject paramObj, String fileName, File file, String fileUploadUrl) {			
+		JSONObject resJsonObject = null;
+		CloseableHttpClient httpclient = HttpClients.createDefault();
+		
+		logger.info("url:{},params：{}", fileUploadUrl, paramObj.toJSONString());
+		
+		try {			
+			HttpPost httppost = new HttpPost(fileUploadUrl);
+			FileBody bin = new FileBody(file);
+			StringBody comment = new StringBody("A binary file of some kind",
+					ContentType.TEXT_PLAIN);
+			MultipartEntityBuilder buider = MultipartEntityBuilder.create()
+					.addPart(fileName, bin).addPart("comment", comment);
+			if (paramObj != null) {
+				for (Entry<String, Object> entry : paramObj.entrySet()) {
+					buider.addTextBody(entry.getKey(), String.valueOf(entry.getValue()));
+				}
+			}
+			HttpEntity reqEntity = buider.build();
+			httppost.setEntity(reqEntity);
+			
+			logger.info("executing request " + httppost.getRequestLine());
+			
+			CloseableHttpResponse response = httpclient.execute(httppost);
+			try {
+				HttpEntity resEntity = response.getEntity();
+				if (resEntity != null) {
+					String resString = inputStream2String(resEntity
+							.getContent());
+					
+					logger.info(resString);
+					System.out.println(resString);
+					
+					resJsonObject = JSONObject.parseObject(resString);
+				}
+				EntityUtils.consume(resEntity);
+			} finally {
+				response.close();
+			}
+		} 
+		catch (ClientProtocolException e) {
+			logger.error("ClientProtocolException", e);
+		} 
+		catch (IOException e) {
+			logger.error("IOException", e);
+		} 
+		finally {
+			try {
+				httpclient.close();
+			} catch (IOException e) {
+				logger.error("IOException", e);
+			}			
+		}
+		return resJsonObject;
 	}
 	
 }

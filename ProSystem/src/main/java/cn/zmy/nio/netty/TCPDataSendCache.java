@@ -1,4 +1,4 @@
-package cn.zmy.netty;
+package cn.zmy.nio.netty;
 
 import java.util.Date;
 import java.util.Iterator;
@@ -12,28 +12,18 @@ import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 
-/**
- * <dl>
- * <dt>TCPDataSendCache.java</dt>
- * <dd>Description:座席状态存储内存容器类</dd>
- * <dd>Company: 安徽青牛信息技术有限公司</dd>
- * <dd>CreateDate: 2014-11-27</dd>
- * </dl>
- * 
- * @author yusy
- */
 public class TCPDataSendCache {
-	
+
 	/**
-     * 根据socket通道获取客户端IP
-     * 
-     * @param channel 字符串
-     * @return 客户端连接IP
-     */
-    public static String getClientIP(Channel channel)
-    {
-        return channel.remoteAddress().toString().substring(1);
-    }
+	 * 根据socket通道获取客户端IP
+	 * 
+	 * @param channel
+	 *            字符串
+	 * @return 客户端连接IP
+	 */
+	public static String getClientIP(Channel channel) {
+		return channel.remoteAddress().toString().substring(1);
+	}
 
 	private static Map<String, Channel> map = new ConcurrentHashMap<String, Channel>();
 
@@ -46,7 +36,7 @@ public class TCPDataSendCache {
 
 	public static void addChannel(Channel channel) {
 		String clientIP = getClientIP(channel);
-//		logger.debug("client is connetected:" + clientIP);
+		// logger.debug("client is connetected:" + clientIP);
 
 		map.put(clientIP, channel);
 		mapTime.put(clientIP, new Date());
@@ -56,7 +46,7 @@ public class TCPDataSendCache {
 		String clientIP = getClientIP(channel);
 		if (map.containsKey(clientIP)) {
 			map.remove(clientIP);
-//			logger.debug("client is closed:" + clientIP);
+			// logger.debug("client is closed:" + clientIP);
 		}
 	}
 
@@ -79,7 +69,7 @@ public class TCPDataSendCache {
 			Date date = mapTime.get(clientIP);
 			// 时间 > 10秒,则判断失效 删除
 			if (date != null && (((new Date()).getTime() - date.getTime()) > 20000)) {
-//				logger.debug("connection is overtime 20s:" + clientIP);
+				// logger.debug("connection is overtime 20s:" + clientIP);
 				removeChannel(channel);
 				// 重新获取
 				channel = getChannel(key);

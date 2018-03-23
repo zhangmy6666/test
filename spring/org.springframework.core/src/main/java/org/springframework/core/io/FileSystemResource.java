@@ -34,6 +34,11 @@ import org.springframework.util.StringUtils;
  * @since 28.12.2003
  * @see java.io.File
  */
+/**
+ * 访问文件系统里资源的实现类。
+ * @author zhang
+ *
+ */
 public class FileSystemResource extends AbstractResource {
 
 	private final File file;

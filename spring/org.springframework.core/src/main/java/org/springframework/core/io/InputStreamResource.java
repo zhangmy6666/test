@@ -37,6 +37,11 @@ import java.io.InputStream;
  * @see FileSystemResource
  * @see UrlResource
  */
+/**
+ * 访问输入流资源的实现类
+ * @author zhang
+ *
+ */
 public class InputStreamResource extends AbstractResource {
 
 	private final InputStream inputStream;

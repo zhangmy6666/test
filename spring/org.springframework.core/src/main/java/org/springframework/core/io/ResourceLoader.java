@@ -39,8 +39,8 @@ import org.springframework.util.ResourceUtils;
  * @see org.springframework.context.ResourceLoaderAware
  */
 /**
- * 用于实现不同的Resource加载策略
- * 接口的实例对象中可以获取一个resource对象，也就是说将不同Resource实例的创建交给ResourceLoader的实现类来处理。
+ * 用于实现不同的 Resource加载策略
+ * 接口的实例对象中可以获取一个resource对象，将不同Resource实例的创建交给ResourceLoader的实现类来处理。
  * @author zhang
  *
  */

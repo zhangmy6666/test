@@ -122,6 +122,11 @@ import org.springframework.util.ObjectUtils;
  * @see org.springframework.context.ApplicationListener
  * @see org.springframework.context.MessageSource
  */
+/**
+ * 容器的最基础的一个抽象父类，定义了一个容器初始化的基本流程
+ * @author zhang
+ *
+ */
 public abstract class AbstractApplicationContext extends DefaultResourceLoader
 		implements ConfigurableApplicationContext, DisposableBean {
 
@@ -387,20 +392,35 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 		return this.applicationListeners;
 	}
 
-
+	/**
+	 * 容器的初始化是通过调用 refresh() 来实现。
+	 */
 	public void refresh() throws BeansException, IllegalStateException {
 		synchronized (this.startupShutdownMonitor) {
 			// Prepare this context for refreshing.
+			/**
+			 * 容器预准备，记录容器启动标记和时间
+			 */
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
+			/**
+			 * 创建bean工厂 如果已有则销毁 没有则新建
+			 * 实现对BeanDefinition的装载**
+			 */
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
 			// Prepare the bean factory for use in this context.
+			/**
+			 * 配置工厂类的标准上下文属性
+			 */
 			prepareBeanFactory(beanFactory);
 
 			try {
 				// Allows post-processing of the bean factory in context subclasses.
+				/**
+				 * 在beanDefinition装载后，修改beanFactory的入口**
+				 */
 				postProcessBeanFactory(beanFactory);
 
 				// Invoke factory processors registered as beans in the context.
@@ -410,6 +430,9 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 				registerBeanPostProcessors(beanFactory);
 
 				// Initialize message source for this context.
+				/**
+				 * 初始化messageResource
+				 */
 				initMessageSource();
 
 				// Initialize event multicaster for this context.
