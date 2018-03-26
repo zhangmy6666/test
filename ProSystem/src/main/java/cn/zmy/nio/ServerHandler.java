@@ -116,12 +116,14 @@ public class ServerHandler implements Runnable {
 				// 创建ByteBuffer，并开辟一个1M的缓冲区
 				ByteBuffer buffer = ByteBuffer.allocate(1024);
 				// 读取请求码流，返回读取到的字节数
+				// 从channel读出，写入buffer
 				int readBytes = sc.read(buffer);
 				// 读取到字节，对字节进行编解码
 				if (readBytes > 0) {
 					// 将缓冲区当前的limit设置为position, position置为0，用于后续对缓冲区的读取操作
+					// buffer从写模式切换到读模式
 					buffer.flip();
-					// 根据缓冲区可读字节数创建字节数组
+					// 根据缓冲区可读字节数创建字节数组remaining = limit - position
 					byte[] bytes = new byte[buffer.remaining()];
 					// 将缓冲区可读字节数组复制到新建的数组中
 					buffer.get(bytes);
@@ -160,11 +162,11 @@ public class ServerHandler implements Runnable {
         byte[] bytes = response.getBytes();  
         //根据数组容量创建ByteBuffer  
         ByteBuffer writeBuffer = ByteBuffer.allocate(bytes.length);  
-        //将字节数组复制到缓冲区  
+        //将字节数组复制到缓冲区  写模式
         writeBuffer.put(bytes);  
-        //flip操作  
+        //flip操作  切换写模式到读模式
         writeBuffer.flip();  
-        //发送缓冲区的字节数组  
+        //发送缓冲区的字节数组  从buffer中读出写入channel
         channel.write(writeBuffer);  
         //****此处不含处理“写半包”的代码
 	}

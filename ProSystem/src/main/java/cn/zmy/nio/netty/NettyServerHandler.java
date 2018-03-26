@@ -12,7 +12,7 @@ import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 
-public class TCPDataSendCache {
+public class NettyServerHandler {
 
 	/**
 	 * 根据socket通道获取客户端IP
@@ -36,7 +36,7 @@ public class TCPDataSendCache {
 
 	public static void addChannel(Channel channel) {
 		String clientIP = getClientIP(channel);
-		// logger.debug("client is connetected:" + clientIP);
+		System.out.println("client is connetected:" + clientIP);
 
 		map.put(clientIP, channel);
 		mapTime.put(clientIP, new Date());
@@ -46,7 +46,7 @@ public class TCPDataSendCache {
 		String clientIP = getClientIP(channel);
 		if (map.containsKey(clientIP)) {
 			map.remove(clientIP);
-			// logger.debug("client is closed:" + clientIP);
+			System.out.println("client is closed:" + clientIP);
 		}
 	}
 
@@ -67,7 +67,7 @@ public class TCPDataSendCache {
 		if (null != channel) {
 			String clientIP = getClientIP(channel);
 			Date date = mapTime.get(clientIP);
-			// 时间 > 10秒,则判断失效 删除
+			// 时间 > 20秒,则判断失效 删除
 			if (date != null && (((new Date()).getTime() - date.getTime()) > 20000)) {
 				// logger.debug("connection is overtime 20s:" + clientIP);
 				removeChannel(channel);
@@ -79,34 +79,34 @@ public class TCPDataSendCache {
 		return channel;
 	}
 
-	public static void sendMsg(MsgCacheDto msgCacheDto) {
-		final Channel channel = getChannel(msgCacheDto.getClientIP());
-		final String message = msgCacheDto.getSendMsg();
-		if (null != channel) {
-			while (true) {
-				if (channel.isWritable()) {
-					channel.writeAndFlush(msgCacheDto.getSendMsg()).addListener(new ChannelFutureListener() {
-
-						@Override
-						public void operationComplete(ChannelFuture future) throws Exception {
-							if (future.isSuccess()) {
-								System.out.println("send " + getClientIP(channel) + ", m:" + message + " s");
-							} else {
-								System.out.println("send " + getClientIP(channel) + ", m:" + message + " f");
-							}
-						};
-					});
-					break;
-				} else {
-					try {
-						Thread.sleep(100);
-					} catch (InterruptedException e) {
-						System.out.println("TCPDataSendCache.sendMsg has errors");
-					}
-				}
-			}
-		} else {
-			System.out.println("socket channel is empty!");
-		}
-	}
+//	public static void sendMsg(MsgDto msgDto) {
+//		final Channel channel = getChannel(msgDto.getClientIP());
+//		final String message = msgDto.getMsg();
+//		if (null != channel) {
+//			while (true) {
+//				if (channel.isWritable()) {
+//					channel.writeAndFlush(msgDto.getMsg()).addListener(new ChannelFutureListener() {
+//
+//						@Override
+//						public void operationComplete(ChannelFuture future) throws Exception {
+//							if (future.isSuccess()) {
+//								System.out.println("send " + getClientIP(channel) + ", m:" + message + " succesed");
+//							} else {
+//								System.out.println("send " + getClientIP(channel) + ", m:" + message + " failed");
+//							}
+//						};
+//					});
+//					break;
+//				} else {
+//					try {
+//						Thread.sleep(100);
+//					} catch (InterruptedException e) {
+//						System.out.println("sendMsg has errors");
+//					}
+//				}
+//			}
+//		} else {
+//			System.out.println("socket channel is empty!");
+//		}
+//	}
 }

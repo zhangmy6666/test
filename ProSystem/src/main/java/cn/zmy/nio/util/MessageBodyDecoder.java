@@ -1,4 +1,4 @@
-package cn.zmy.nio.netty;
+package cn.zmy.nio.util;
 
 import java.util.List;
 
